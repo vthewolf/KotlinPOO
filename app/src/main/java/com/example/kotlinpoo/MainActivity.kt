@@ -28,6 +28,13 @@ class MainActivity : AppCompatActivity() {
         victor.die()
         println(victor.alive)
 
+        var bicho: Pokemon = Pokemon()
+        println(bicho.getName())
+        println(bicho.getAttackPower())
+        bicho.setLife(40f)
+        println(bicho.getLife())
+
+
 
     }
 }
