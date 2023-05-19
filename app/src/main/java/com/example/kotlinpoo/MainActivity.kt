@@ -1,9 +1,15 @@
 package com.example.kotlinpoo
 
+import android.content.Context
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Toast
 
 class MainActivity : AppCompatActivity() {
+
+    companion object{
+        lateinit var maincontext: Context
+    }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -42,6 +48,8 @@ class MainActivity : AppCompatActivity() {
         println(bicho.getAttackPower())
         bicho.setLife(40f)
         println(bicho.getLife())
+
+        Toast.makeText(this, "Hola", Toast.LENGTH_LONG).show()
 
 
 
